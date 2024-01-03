@@ -1,0 +1,49 @@
+
+#menu-bar{
+    display: flex;
+    align-items:center ;
+    position: sticky;
+    top:8px;
+    width:100%;
+    z-index: 1;
+    background-color: rgba(50, 81, 105, 0.9);
+    padding: 11px;
+    /* transform: translateX(-7px) translateY(-7px); */
+    & #menu-button{
+       width: 5rem;
+       height: 3rem;
+       position: relative;
+       z-index: 1;
+       cursor: pointer;
+       transition: all 0.3s;
+    }
+    & #menu-button:hover{
+       transform: scale(1.1);
+    }
+    & div{
+        display: flex;
+        gap:10px;
+        align-items: center;
+        flex-grow: 1;
+        justify-content: center;
+    }
+    & div>img#profile-pic{
+        /* flex-grow: 1; */
+        width:5rem;
+        height: 5rem;
+        border-radius: 50%;
+    }
+    & div>#title-text{
+        font-size: 3rem;
+        margin:0px;
+    }
+    #search-box{
+        /* border:2px solid white; */
+        flex-grow: 0;
+        & input{
+            border-radius:10px;
+            font-size: 2rem;
+        }
+        /* width: fit-content; */
+    }
+}

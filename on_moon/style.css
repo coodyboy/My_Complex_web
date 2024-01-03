@@ -1,0 +1,136 @@
+
+body{
+    background-image: url(./on_moon.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#me{
+    width:7rem;
+    border-radius:50%;
+    left: 50%;
+    animation: linear 0s 1;
+    animation-duration: 0.5s;
+    animation-name:animation1;
+    animation-fill-mode: none;
+}
+#my_friend{
+    width:7rem;
+    border-radius:50%;
+    animation: linear 0s 1;
+    animation-fill-mode: forwards;
+    animation-duration: 6s;
+    /* top:0; */
+    /* animation-fill-mode: none; */
+}
+#rocket{
+    width:10rem;
+    height: 10rem;
+    position:absolute;
+    top:40%;
+    animation: ease-out 0s 1;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    /* left:-10%; */
+}
+.we{
+    position:absolute;
+    top:60%;
+    left:20%;
+}
+#dialogue-box{
+    display: flex;
+    position: relative;
+    top:0;
+    background-color: rgb(95, 121, 121,0.4);
+    height:6rem;
+    /* display: flex;
+    align-items: center; */
+    /* justify-content: center; */
+    /* z-index: -2; */
+    /* gap:10px; */
+}
+#dialogue-me{
+    height:6rem;
+    border-radius:50%;
+}
+#dialogue-me-div{
+    flex-grow: 1;
+}
+#to-center{
+    flex-grow: 1;
+}
+.text{
+    /* position:absolute; */
+    /* top:0; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    /* font-size: 11rem; */
+    color: aliceblue;
+}
+#instruction-text{
+    font-size:1.5rem;
+    /* float: left; */
+    position: relative;
+    top:10px;
+    color:aliceblue;
+}
+p{
+    font-size:2rem;
+}
+#the-button{
+    position:relative;
+    left: 100%;
+    transform:translateX(-100%);
+    top:4px;
+}
+@keyframes animation1{
+    0%,
+    100%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-20px);
+    }
+}
+
+@keyframes animation2{
+    0%,
+    100%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-20px);
+    }
+}
+@keyframes animation3 {
+    100%{
+        left: 100%;
+    }
+}
+@keyframes animation4 {
+    100%{
+        left: 100%;
+    }
+}
+@keyframes animation5{
+    100%{
+        top:42%;
+        left: 3%;
+    }
+}
+@keyframes animation6 {
+    100%{
+        top:-100vh;
+        /* transform: translateY(100%); */
+    }
+}
+
+body{
+    overflow-x: hidden;
+}
+
+:root{
+    font-size: 16px;
+}

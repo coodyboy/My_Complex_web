@@ -1,0 +1,12 @@
+
+#animation-2-box{
+    position:absolute;
+    top:100%;
+    left:50%;
+    z-index: -1;
+    /* border:2px solid rgb(0, 119, 231); */
+    /* background-color: rgb(55, 70, 70); */
+    height:50%;
+    width:50%;
+    transform:translateY(-100%);
+}

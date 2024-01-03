@@ -1,0 +1,103 @@
+body{
+    background-color: rgb(7, 2, 2);
+    /* overflow-x:hidden; */
+}
+*{
+    scroll-behavior:smooth;
+}
+body{
+    overflow-x: hidden;
+}
+#welcome-text-box{
+    /* position: relative; */
+    border: 2px solid;
+    text-align: center;
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    -webkit-background-clip:text;
+    -moz-background-clip:text;
+    color:transparent;
+    font-size: 4rem;
+}
+#welcome-text-box > h1{
+    font-family: 'Rubik Scribble';
+}
+
+#first-content{
+    color:rgb(174, 179, 204);
+    font-family: 'Lato';
+    font-size:3rem;
+    /* position:relative; */
+    line-height: 1.6;
+    padding:23px;
+    max-width: 600px;
+    opacity: 1;
+    transition:all 1s;
+    transition-delay: 0.5s;
+}
+#second-content{
+    color:rgb(174, 179, 204);
+    font-family: 'Lato';
+    font-size:3rem;
+    position:relative;
+    left:100%;
+    transform:translateX(-100%);
+    /* float: right; */
+    line-height: 1.6;
+    padding:23px;
+    max-width: 600px;
+    transition:all 1s;
+    transition-delay: 1s;
+    opacity: 1;
+}
+
+#planet-description{
+    position:relative;
+    top:5rem;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:5rem;
+}
+.planets{
+    min-height: 30rem;
+    max-width: 343px;
+    border: 2px solid white;
+    color:white;
+    padding: 2rem;
+    border-radius: 11px;
+    
+}
+.planets> img{
+    width:30rem;
+    float: left;
+}
+.planets div> p{
+    margin: 5px;
+    font-size:2.4rem;
+}
+.name{
+    margin-bottom:10px;
+    font-size:2.4rem;
+}
+#good-bye-text{
+    color:aliceblue;
+    font-size:34px;
+    height: 34px;
+    /* background-color: rgb(39, 56, 56); */
+    position: relative;
+    top:4rem;
+    text-align: center;
+    font-family: Lato;
+}
+#footer{
+    position:relative;
+    top:11rem;
+    background-color: rgb(30, 37, 37);
+    height:20rem;
+    font-size: 2rem;
+    color:aliceblue;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

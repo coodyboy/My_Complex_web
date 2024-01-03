@@ -1,0 +1,11 @@
+
+#animation-5-box{
+    position:absolute;
+    top:50%;
+    left:50%;
+    /* border:2px solid rgb(25, 199, 18); */
+    height:50%;
+    width:50%;
+    z-index: -1;
+    transform:scaleY(-1) translateX(-50%) translateY(-50%);
+}

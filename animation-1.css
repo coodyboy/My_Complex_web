@@ -1,0 +1,105 @@
+.size{
+    width:3rem;
+    height: 3rem;
+    /* position: relative; */
+    /* z-index: -1; */
+}
+
+#animation-1-box{
+    position:absolute;
+    top:0%;
+    /* border:2px solid white; */
+    height:50%;
+    width:50%;
+    z-index: -1;
+    transform: scaleX(-1);
+}
+
+.moon{
+    position:absolute;
+    &.moon-2{
+        left:60%;
+        animation: animation-curve-left 3s ease-out 0s infinite;
+    }
+    &.moon-1{
+        top:20%;
+        animation: animation-linear-right 3s ease-in 0s infinite;
+    }
+}
+
+.world{
+    position: absolute;
+    &.world-1{
+        left:70%;
+        animation: animation-linear-up 5s ease-out 0s infinite;
+    }
+    &.world-2{
+        top:80%;
+        left:20%;
+        animation: animation-linear-up 4s ease-in 0s infinite;
+    }
+}
+
+.sun{
+    position:absolute;
+    &.sun-1{
+        left:30%;
+        top:50%;
+        animation: animation-curve-right 4s linear 0s infinite;
+    }
+    &.sun-2{
+        left:40%;
+        animation: animation-curve-left 4s ease-in-out 0s infinite;
+    }
+}
+
+@keyframes animation-linear-up{
+    0%,
+    100%{
+        top:20%;
+        transform: rotate(0);
+    }
+    50%{
+        top:70%;
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes animation-linear-right{
+    0%,
+    100%{
+        left:10%;
+        transform: rotate(0);
+    }
+    50%{
+        left:60%;
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes animation-curve-left{
+    0%,
+    100%{
+        top:70%;
+        transform: rotate(0);
+    }
+    50%{
+        left:40%;
+        top:30%;
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes animation-curve-right {
+    0%,
+    100%{
+        top:50%;
+        transform: rotate(0);
+    }
+    50%{
+        top:20%;
+        left:50%;
+        transform: rotateZ(360deg);
+    }
+}

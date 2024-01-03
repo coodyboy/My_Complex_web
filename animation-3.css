@@ -1,0 +1,11 @@
+
+#animation-3-box{
+    position:absolute;
+    top:0%;
+    left:50%;
+    /* border:2px solid rgb(236, 104, 104); */
+    z-index: -1;
+    height:50%;
+    width:50%;
+    transform: scaleX(-1) scaleY(-1) rotate(360deg);
+}

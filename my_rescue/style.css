@@ -1,0 +1,52 @@
+body{
+    /* width:45px; */
+    /* height:45px; */
+    /* border:2px solid; */
+    /* transition:all 4s; */
+    /* width:100vw; */
+    /* height: 96.7vh; */
+    background-image: url('./on_moon.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.entity{
+    position: absolute;
+    top:70vh;
+    width:5rem;
+}
+
+#my-friend{
+    border-radius: 50%;
+}
+#alien{
+    left:50%;
+}
+#dialogue-box{
+    display: flex;
+    position: relative;
+    height: 20vh;
+    background-color: rgba(3, 228, 134, 0.486);
+    justify-content: center;
+    align-items: center;
+}
+#dialogue-box-pic{
+    position: absolute;
+    left: 0;
+    width: 5rem;
+    border-radius: 50%;
+}
+#text-box{
+    color: aliceblue;
+}
+.text{
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+}
+button{
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+    margin-top: 10px;
+}

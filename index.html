@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="animation-1.css">
+    <link rel="stylesheet" href="animation-2.css">
+    <link rel="stylesheet" href="animation-3.css">
+    <link rel="stylesheet" href="animation-4.css">
+    <link rel="stylesheet" href="animation-5.css">
+    <link rel="stylesheet" href="side-bar.css">
+    <link rel="stylesheet" href="menu-bar.css">
+    <link rel="stylesheet" href="queries.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Montserrat:wght@500&family=Noto+Sans&family=Pixelify+Sans:wght@500&family=Roboto:wght@400;500&family=Rubik+Scribble&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@500&family=Noto+Sans&family=Pixelify+Sans:wght@500&family=Roboto:wght@400;500&family=Rubik+Scribble&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- for menu bar -->
+    <div id="menu-bar">
+        <img src="./icons8-menu-100.png" alt="" id="menu-button" onclick="displaySideBar()">
+        <div id="profile-pic-and-text">
+            <img src="./pic.png" alt="" id="profile-pic">
+            <p id="title-text">Coody's Realm</p>
+        </div>
+        <div id="search-box">
+            <input type="text" placeholder="Search...">
+        </div>
+        <!-- for side bar -->
+        <div id="side-bar" style="transform: scaleX(0);">
+            <img src="./star.png" alt="" onclick="hideSideBar()">
+            <div id="option-box">
+                <a>Home</a>
+                <a>About my website</a>
+                <a >About Coody Boy</a>
+            </div>
+        </div>
+        <!-- end of side bar -->
+
+    </div>
+    <!-- end of menu bar -->
+
+    <!-- for welcome text -->
+    <div id="welcome-text-box">
+        <h1>Welcome to coody's realm.</h1>
+    </div>
+    <!-- end of welcome text -->
+    
+
+    <!-- for animation -->
+    <div id="animation-1-box">
+        <img src="./moon.png" alt="" class="moon moon-1 size">
+        <img src="./world.png" alt="" class="world world-1 size">
+        <img src="./world.png" alt="" class="world world-2 size">
+        <img src="./moon.png" alt="" class="moon moon-2 size">
+        <img src="./sun.png" alt="" class="sun sun-1 size">
+        <img src="./sun.png" alt="" class="sun sun-2 size">
+    </div>
+    <div id="animation-2-box">
+        <img src="./moon.png"  alt="" class="moon moon-1 size">
+        <img src="./world.png"  alt="" class="world world-1 size">
+        <img src="./world.png"  alt="" class="world world-2 size">
+        <img src="./moon.png"  alt="" class="moon moon-2 size">
+        <img src="./sun.png" alt="" class="sun sun-1 size">
+        <img src="./sun.png" alt="" class="sun sun-2 size">
+    </div>
+    <div id="animation-3-box">
+        <img src="./moon.png"  alt="" class="moon moon-1 size">
+        <img src="./world.png"  alt="" class="world world-1 size">
+        <img src="./world.png"  alt="" class="world world-2 size">
+        <img src="./moon.png"  alt="" class="moon moon-2 size">
+        <img src="./sun.png" alt="" class="sun sun-1 size">
+        <img src="./sun.png" alt="" class="sun sun-2 size">
+    </div>
+    <div id="animation-4-box">
+        <img src="./moon.png"  alt="" class="moon moon-1 size">
+        <img src="./world.png"  alt="" class="world world-1 size">
+        <img src="./world.png"  alt="" class="world world-2 size">
+        <img src="./moon.png"  alt="" class="moon moon-2 size">
+        <img src="./sun.png" alt="" class="sun sun-1 size">
+        <img src="./sun.png" alt="" class="sun sun-2 size">
+    </div>
+    <div id="animation-5-box">
+        <img src="./moon.png"  alt="" class="moon moon-1 size">
+        <img src="./world.png"  alt="" class="world world-1 size">
+        <img src="./world.png"  alt="" class="world world-2 size">
+        <img src="./moon.png"  alt="" class="moon moon-2 size">
+        <img src="./sun.png" alt="" class="sun sun-1 size">
+        <img src="./sun.png" alt="" class="sun sun-2 size">
+    </div>
+    <!-- end of animation -->
+
+    <!-- for content -->
+    <div id="content">
+        <div id="first-content">
+            <p>Here You will learn about what I want you to know about. And that is about some planets.</p>
+        </div>
+        <div id="second-content">
+            <p>So, are you ready to delve into the topic ? Then let's go!</p>
+        </div>
+
+        <div id="planet-description">
+            <div id="earth" class="planets">
+                <img src="./world-map.png" alt="">
+                <p class="name"><b>Earth:</b></p>
+                <div id="desciption">
+                    <p>We all know about Earth. That's what we think but did you know that Earth is aproximately 4.5 billon years old. It is worth noting that Earth's atmosphere is composed mainly of nitrogen (about 78%) and oxygen (about 21%) with trace amounts of other gases.</p>
+                </div>
+            </div>
+            <div id="mars" class="planets">
+                <img src="./mars.png" alt="">
+                <p class="name"><b>Mars:</b></p>
+                <div id="desciption">
+                    <p>Mars is often called the "Red Planet" due to its reddish appearance, caused by iron oxide (rust) on its surface.A day on Mars is just a little over 24 hours.</p>
+                </div>
+            </div>
+            <div id="jupiter" class="planets">
+                <img src="./jupiter.png" alt="">
+                <p class="name"><b>Jupiter:</b></p>
+                <div id="desciption">
+                    <p>Jupiter is the largest planet in our solar system, more than 11 times wider than Earth and over 300 times more massive. It's mostly made up of hydrogen and helium.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- end of content -->
+
+    <div id="good-bye-text">
+        <p>So,That's it goodbye.</p>
+    </div>
+
+    <div id="footer">
+        <div><p>Made by coody boy</p></div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

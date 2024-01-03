@@ -1,0 +1,195 @@
+
+:root{
+    --center-X-transform:translateX(-50%);
+    --center-Y-transform:translateY(-50%);
+    --dot-color:black;
+    --animation: animation linear infinite;
+    font-size: 16px;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+.dot-box{
+    height: 3.5rem;
+}
+.dot{
+    width:2rem;
+    height:2rem;
+}
+.loading-box{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:16rem;
+    height:14rem;
+}
+.dot-1{
+    border-radius: 50%;
+    background-color: var(--dot-color);
+    position:relative;
+    top:50%;
+    left:50%;
+    transform:var(--center-X-transform) var(--center-Y-transform);
+    animation: var(--animation);
+    animation-duration: 1s;
+}
+.dot-2{
+    display: inline-block;
+    position: relative;
+    left: 70%;
+    border-radius: 50%;
+    background-color: var(--dot-color);
+    transform:var(--center-Y-transform);
+    animation: var(--animation);
+    animation-duration:1s;
+    animation-delay: 0.5s;
+}
+.dot-6{
+    position: relative;
+    display:inline-block;
+    left: 6%;
+    border-radius: 50%;
+    background-color:var(--dot-color);
+    transform:var(--center-Y-transform);
+    animation: var(--animation);
+    animation-duration: 1s;
+    animation-delay: 0.1s;
+}
+.dot-5{
+    position: absolute;
+    display:inline-block;
+    left: 70%;
+    border-radius: 50%;
+    background-color: var(--dot-color);
+    transform:var(--center-Y-transform);
+    animation: var(--animation);
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+}
+.dot-3{
+    position: relative;
+    display:inline-block;
+    left: 20%;
+    border-radius: 50%;
+    background-color: var(--dot-color);
+    transform:var(--center-Y-transform);
+    animation: var(--animation);
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+}
+.dot-4{
+    position: relative;
+    display:inline-block;
+    left: 50%;
+    border-radius: 50%;
+    bottom:70%;
+    background-color: var(--dot-color);
+    transform:var(--center-X-transform);
+    animation: var(--animation);
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+}
+
+.mother-1{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+    /* background-image: url(./back-ground-image.webp); */
+    /* background-color: black; */
+}
+    
+#space-travel{
+    position: absolute;
+    left: 0;
+    top:100vh;
+    height: 100vh;
+    width:100vw;
+    border:2px solid;
+    background-image:url(./background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#earth{
+    position: absolute;
+    width:100%;
+    height:100%;
+    left: 0;
+    top:50%;
+    transform: var(--center-Y-transform);
+}
+#moon{
+    position: absolute;
+    top:50%;
+    transform:var(--center-Y-transform);
+    width:24rem;
+    height:24rem;
+    left:50%;
+    /* float: right; */
+}
+#rocket{
+    position:absolute;
+    width:3rem;
+    height: 3rem;
+    left:20%;
+    /* left:343%; */
+    top:50%;
+    transform: var(--center-Y-transform) rotateZ(90deg);
+    animation: animation-rocket 3s ease 3s 1 forwards;
+}
+#earth-box{
+    /* border:2px solid; */
+    float: right;
+    position: relative;
+    right:80%;
+    width:9rem;
+    height:9rem;
+    /* left: 10%; */
+    top:50%;
+    transform: var(--center-Y-transform);
+}
+body{
+    background-color: black;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.mother-2{
+    position:absolute;
+    top:200vh;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(./back-ground-image.webp); */
+    /* background-color: black; */
+}
+
+/* body{
+    overflow: hidden;
+} */
+
+@keyframes animation {
+    0%,
+    100%{
+        background-color:antiquewhite;
+    }
+    50%{
+        background-color: black;
+    }
+}
+
+@keyframes animation-rocket {
+    0%{
+        left:20%;
+    }
+    100%{
+        left:47%;
+    }
+}

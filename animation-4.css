@@ -1,0 +1,15 @@
+
+#animation-4-box{
+    position:absolute;
+    top:100%;
+    left:0%;
+    z-index: -1;
+    /* z-index: -1; */
+    /* border:2px solid #e42626; */
+    height:50%;
+    width:50%;
+    transform: scaleX(-1) scaleY(1) rotate(360deg) translateY(-100%);
+}
+*{
+    box-sizing: border-box;
+}

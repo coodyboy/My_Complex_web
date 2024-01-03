@@ -1,0 +1,8 @@
+#me{
+    border-radius: 50%;
+    /* text-align: center; */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10rem;
+}
